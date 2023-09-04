@@ -1,0 +1,25 @@
+<div class="player">
+  <div id="wave"></div>
+  <div class="player__buttons">
+    <button
+      mat-raised-button
+      color="primary"
+      *ngIf="!isPlaying"
+      (click)="play()"
+    >
+      Play
+    </button>
+
+    <button
+      mat-raised-button
+      color="primary"
+      *ngIf="isPlaying"
+      (click)="pause()"
+    >
+      Pause
+    </button>
+    <button mat-raised-button color="primary" (click)="closePlayer()">
+      Close
+    </button>
+  </div>
+</div>

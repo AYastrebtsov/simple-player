@@ -1,0 +1,12 @@
+.player {
+  display: grid;
+  row-gap: 30px;
+  margin-top: 30px;
+  padding: 30px;
+
+  &__buttons {
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+  }
+}

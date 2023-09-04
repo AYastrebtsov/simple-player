@@ -1,0 +1,12 @@
+<div>
+  <app-table
+    [dataSource]="files"
+    (selectedEvent)="setSelectedAudio($event)"
+  ></app-table>
+
+  <app-player
+    *ngIf="selectedAudio !== null"
+    [dataSource]="files[selectedAudio].path"
+    (closeEvent)="setSelectedAudio($event)"
+  ></app-player>
+</div>
